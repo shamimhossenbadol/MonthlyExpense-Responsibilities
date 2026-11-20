@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A monthly "page" with binder rings and a check mark. Kept inside the 66dp safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- soft drop shadow -->
+    <path
+        android:fillColor="#33000000"
+        android:pathData="M45,37h20a9,9 0 0 1 9,9v28a9,9 0 0 1 -9,9h-20a9,9 0 0 1 -9,-9v-28a9,9 0 0 1 9,-9z" />
+
+    <!-- page -->
+    <path android:pathData="M43,34h22a9,9 0 0 1 9,9v28a9,9 0 0 1 -9,9h-22a9,9 0 0 1 -9,-9v-28a9,9 0 0 1 9,-9z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="34"
+                android:startY="34"
+                android:endX="74"
+                android:endY="80"
+                android:startColor="#FFA9B0FF"
+                android:endColor="#FF6E62EE" />
+        </aapt:attr>
+    </path>
+
+    <!-- header band -->
+    <path
+        android:fillColor="#26FFFFFF"
+        android:pathData="M43,34h22a9,9 0 0 1 9,9v2h-40v-2a9,9 0 0 1 9,-9z" />
+
+    <!-- binder rings -->
+    <path
+        android:fillColor="#FFECEEFF"
+        android:pathData="M45.5,28h3a1.5,1.5 0 0 1 1.5,1.5v8a1.5,1.5 0 0 1 -1.5,1.5h-3a1.5,1.5 0 0 1 -1.5,-1.5v-8a1.5,1.5 0 0 1 1.5,-1.5z" />
+    <path
+        android:fillColor="#FFECEEFF"
+        android:pathData="M59.5,28h3a1.5,1.5 0 0 1 1.5,1.5v8a1.5,1.5 0 0 1 -1.5,1.5h-3a1.5,1.5 0 0 1 -1.5,-1.5v-8a1.5,1.5 0 0 1 1.5,-1.5z" />
+
+    <!-- check -->
+    <path
+        android:pathData="M44.5,61l6.5,6.5l13,-13.5"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>
