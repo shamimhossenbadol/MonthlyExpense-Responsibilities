@@ -10,3 +10,7 @@
 #-keepclassmembers class fqcn.of.javascript.interface.for.webview {
 #   public *;
 #}
+# The default ViewModel factory creates AndroidViewModels by reflection via the (Application) constructor.
+-keepclassmembers class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}

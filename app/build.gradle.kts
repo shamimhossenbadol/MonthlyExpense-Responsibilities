@@ -24,7 +24,9 @@ android {
         release {
             optimization {
                 enable = true
-                packageScope = setOf("androidx.**", "kotlin.**", "kotlinx.**")
+                // Whole-app R8. A library-only packageScope made R8 move classes out of
+                // kotlin.collections/kotlin.text while their package-private parents stayed behind,
+                // which crashed release builds at startup with IllegalAccessError.
             }
         }
     }
